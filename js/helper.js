@@ -1,15 +1,19 @@
-const abi = [{
-        "inputs": [{
-            "internalType": "contract IERC20",
-            "name": "_erc20_contract_address",
-            "type": "address"
-        }],
+const abi = [
+    {
+        "inputs": [
+            {
+                "internalType": "contract IERC20",
+                "name": "_erc20_contract_address",
+                "type": "address"
+            }
+        ],
         "stateMutability": "nonpayable",
         "type": "constructor"
     },
     {
         "anonymous": false,
-        "inputs": [{
+        "inputs": [
+            {
                 "indexed": false,
                 "internalType": "address",
                 "name": "recipient",
@@ -27,7 +31,8 @@ const abi = [{
     },
     {
         "anonymous": false,
-        "inputs": [{
+        "inputs": [
+            {
                 "indexed": false,
                 "internalType": "address",
                 "name": "from",
@@ -45,7 +50,8 @@ const abi = [{
     },
     {
         "anonymous": false,
-        "inputs": [{
+        "inputs": [
+            {
                 "indexed": false,
                 "internalType": "address",
                 "name": "recipient",
@@ -64,46 +70,57 @@ const abi = [{
     {
         "inputs": [],
         "name": "allIncomingDepositsFinalised",
-        "outputs": [{
-            "internalType": "bool",
-            "name": "",
-            "type": "bool"
-        }],
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
         "stateMutability": "view",
         "type": "function"
     },
     {
-        "inputs": [{
-            "internalType": "address",
-            "name": "",
-            "type": "address"
-        }],
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
         "name": "alreadyWithdrawn",
-        "outputs": [{
-            "internalType": "uint256",
-            "name": "",
-            "type": "uint256"
-        }],
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
         "stateMutability": "view",
         "type": "function"
     },
     {
-        "inputs": [{
-            "internalType": "address",
-            "name": "",
-            "type": "address"
-        }],
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
         "name": "balances",
-        "outputs": [{
-            "internalType": "uint256",
-            "name": "",
-            "type": "uint256"
-        }],
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
         "stateMutability": "view",
         "type": "function"
     },
     {
-        "inputs": [{
+        "inputs": [
+            {
                 "internalType": "address[]",
                 "name": "recipients",
                 "type": "address[]"
@@ -122,16 +139,19 @@ const abi = [{
     {
         "inputs": [],
         "name": "contractBalance",
-        "outputs": [{
-            "internalType": "uint256",
-            "name": "",
-            "type": "uint256"
-        }],
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
         "stateMutability": "view",
         "type": "function"
     },
     {
-        "inputs": [{
+        "inputs": [
+            {
                 "internalType": "address",
                 "name": "recipient",
                 "type": "address"
@@ -150,11 +170,13 @@ const abi = [{
     {
         "inputs": [],
         "name": "erc20Contract",
-        "outputs": [{
-            "internalType": "contract IERC20",
-            "name": "",
-            "type": "address"
-        }],
+        "outputs": [
+            {
+                "internalType": "contract IERC20",
+                "name": "",
+                "type": "address"
+            }
+        ],
         "stateMutability": "view",
         "type": "function"
     },
@@ -168,31 +190,37 @@ const abi = [{
     {
         "inputs": [],
         "name": "initialTimestamp",
-        "outputs": [{
-            "internalType": "uint256",
-            "name": "",
-            "type": "uint256"
-        }],
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
         "stateMutability": "view",
         "type": "function"
     },
     {
         "inputs": [],
         "name": "owner",
-        "outputs": [{
-            "internalType": "address",
-            "name": "",
-            "type": "address"
-        }],
+        "outputs": [
+            {
+                "internalType": "address payable",
+                "name": "",
+                "type": "address"
+            }
+        ],
         "stateMutability": "view",
         "type": "function"
     },
     {
-        "inputs": [{
-            "internalType": "uint256",
-            "name": "_timePeriod",
-            "type": "uint256"
-        }],
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_timePeriodInSeconds",
+                "type": "uint256"
+            }
+        ],
         "name": "setTimestamp",
         "outputs": [],
         "stateMutability": "nonpayable",
@@ -201,34 +229,34 @@ const abi = [{
     {
         "inputs": [],
         "name": "timePeriod",
-        "outputs": [{
-            "internalType": "uint256",
-            "name": "",
-            "type": "uint256"
-        }],
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
         "stateMutability": "view",
         "type": "function"
     },
     {
         "inputs": [],
         "name": "timestampSet",
-        "outputs": [{
-            "internalType": "bool",
-            "name": "",
-            "type": "bool"
-        }],
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
         "stateMutability": "view",
         "type": "function"
     },
     {
-        "inputs": [{
+        "inputs": [
+            {
                 "internalType": "contract IERC20",
                 "name": "token",
-                "type": "address"
-            },
-            {
-                "internalType": "address",
-                "name": "to",
                 "type": "address"
             },
             {
@@ -243,7 +271,8 @@ const abi = [{
         "type": "function"
     },
     {
-        "inputs": [{
+        "inputs": [
+            {
                 "internalType": "contract IERC20",
                 "name": "token",
                 "type": "address"
@@ -265,15 +294,11 @@ const abi = [{
         "type": "function"
     },
     {
-        "inputs": [{
+        "inputs": [
+            {
                 "internalType": "uint256",
                 "name": "amount",
                 "type": "uint256"
-            },
-            {
-                "internalType": "address payable",
-                "name": "ownersAddress",
-                "type": "address"
             }
         ],
         "name": "withdrawEth",
@@ -287,15 +312,13 @@ const abi = [{
     }
 ];
 
-// These are the addresses of the 3 different timelock tokens that were deployed
-// Users will be found in any of these; depending on which timelock option they chose
-const thirty_day_address = '0x3adbA9E6B5779A0B7B67B70B560B7C0605fecD8f';
-const sixty_day_address = '0x5093755a84bE8B3b741Fc4525f521988F841d855';
-const ninety_day_address = '0x195690dBDdc9D27B3DE13D74133373f5Da593779';
+// Address of the simple timelock instance
+const simple_address = '0x34C9A9C8bf9E85a6f84De6e249773e6E1B7c2456';
+
 
 // IMPORTANT - which address are you pasting here?
 // THIS MUST BE THE ERC20 ADDRESS NOT THE TIMELOCK ADDRESS
-const erc20_contract_address = '0xdA4ec2913Cf480fE923FC7a734c727f8543d50f7';
+const erc20_contract_address = '0x23D91837fceE9b52D76e2BE18410D9b2522f681D';
 
 function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve, time));
@@ -307,6 +330,10 @@ class Amounts {
         this.locked = new ethers.BigNumber.from('0');
         this.withdrawn = new ethers.BigNumber.from('0');
         this.available = new ethers.BigNumber.from('0');
+        this.cliffEdge = new ethers.BigNumber.from('0');
+        this.currentTime = new ethers.BigNumber.from('0');
+        this.mostRecentUnlockTimestamp = new ethers.BigNumber.from('0');
+        this.weiPerSecond = new ethers.BigNumber.from('0');
     }
 
     getLocked() {
@@ -321,44 +348,64 @@ class Amounts {
         return this.available;
     }
 
-    incrementLocked(_locked) {
+    getCliffEdge() {
+        return this.cliffEdge;
+    }
+
+    getCurrentTime() {
+        return this.currentTime;
+    }
+
+    getMostRecentUnlockTimestamp() {
+        return this.mostRecentUnlockTimestamp;
+    }
+
+    setLocked(_locked) {
         this.locked = this.locked.add(_locked);
     }
 
-    incrementWithdrawn(_withdrawn) {
+    setWithdrawn(_withdrawn) {
         this.withdrawn = this.withdrawn.add(_withdrawn);
     }
 
-    incrementAvailable(_available) {
+    setAvailable(_available) {
         this.available = this.available.add(_available);
     }
+
+    setCliffEdge(_cliffEdge) {
+        this.cliffEdge = _cliffEdge;
+    }
+
+    setCurrentTime(_currentTime) {
+        this.currentTime = _currentTime;
+    } 
 
     reset() {
         this.locked = new ethers.BigNumber.from('0');
         this.withdrawn = new ethers.BigNumber.from('0');
         this.available = new ethers.BigNumber.from('0');
+        this.releaseEdge = new ethers.BigNumber.from('0');
+        this.currentTime = new ethers.BigNumber.from('0');
     }
 }
 
-var thirtyDayAmounts = new Amounts();
-var sixtyDayAmounts = new Amounts();
-var ninetyDayAmounts = new Amounts();
+var simpleAmounts = new Amounts();
 var provider;
 var signer;
-
 
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("Page has loaded ...");
     window.ethereum.enable();
     connectWallet().then(() => {
         console.log("Wallet connected in page load section");
-        calculateBalancesAtStartup().then(() => {
+        updateBalances().then(() => {
             console.log("Ready to unlock tokens ...")
         });
     });
 });
 
 async function connectWallet() {
+    simpleAmounts.reset();
     window.ethereum.enable();
     console.log('Called connect wallet which is inside helper.js');
     provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -377,12 +424,33 @@ function clearInput() {
     document.getElementById("state_amount").value = '';
 }
 
-async function calculateBalancesAtStartup() {
-        // Provide message if still in first time period
+async function updateBalances() {
+    simpleAmounts.reset();
+
+    window.ethereum.enable();
+
+    provider = new ethers.providers.Web3Provider(window.ethereum);
+
+    // Current time
+    var currentBlock = await provider.getBlock("latest");
+    currentTime = currentBlock.timestamp;
+    currentTimeBN = new ethers.BigNumber.from(currentTime);
+    simpleAmounts.setCurrentTime(currentTimeBN);
+    console.log("Current time: " + simpleAmounts.getCurrentTime());
+
+    // Instantiate simple timelock contract
+    simpleTimeLockContract = new ethers.Contract(simple_address, abi, provider);
+
+    // Cliff edge timestamp
+    timePeriod = await simpleTimeLockContract.timePeriod();
+    timePeriodBN = new ethers.BigNumber.from(timePeriod);
+    simpleAmounts.setCliffEdge(timePeriodBN);
+
+    // If we have not hit the unlock period then just send a message and end processing
     if (
-        currentTime < thirtyDayTimestamp) {
-        console.log("Less than 30 days has passed, no tokens available yet");
-        var unlockCommences = new Date(thirtyDayTimestamp * 1000);
+        currentTime < simpleAmounts.getCliffEdge()) {
+        console.log("No tokens available yet");
+        var unlockCommences = new Date(timePeriod * 1000);
         var toastResponse = JSON.stringify({
             avatar: "../images/favicon.ico",
             text: "Unlocking commences at: " + unlockCommences.toLocaleString(),
@@ -398,10 +466,7 @@ async function calculateBalancesAtStartup() {
         var toastObject = JSON.parse(toastResponse);
         Toastify(toastObject).showToast();
     } else {
-        thirtyDayAmounts.reset();
-        sixtyDayAmounts.reset();
-        ninetyDayAmounts.reset();
-        window.ethereum.enable();
+        // If we have entered the unlock period then go ahead and get the amounts first
         document.getElementById("pb").style.width = '0%';
         console.log("Disabling button");
         document.getElementById("button_calculate_balances").disabled = true;
@@ -409,17 +474,6 @@ async function calculateBalancesAtStartup() {
         document.getElementById("pb").style.transition = "all 30s linear 0s";
         document.getElementById("pb").style.width = '80%';
         var toastResponse;
-        // Provider
-        provider = new ethers.providers.Web3Provider(window.ethereum);
-
-        // Current time
-        var currentBlock = await provider.getBlock("latest");
-        currentTime = currentBlock.timestamp;
-        console.log("Current time: " + currentTime);
-
-        // Signer
-        signer = provider.getSigner();
-        console.log(signer);
 
         // Eth address
         console.log("Calculating balances");
@@ -428,87 +482,51 @@ async function calculateBalancesAtStartup() {
         var resultRegex = pattern.exec(eth_address);
         if (resultRegex != null) {
             var recipientAddress = resultRegex[0];
+            // Balance locked 
+            simpleUsersBalance = await simpleTimeLockContract.balances(resultRegex[0]);
+            simpleUsersBalanceBN = new ethers.BigNumber.from(simpleUsersBalance);
+            simpleAmounts.setLocked(simpleUsersBalanceBN);
+            console.log("User's balance: " + simpleAmounts.getLocked());
 
-            // Instantiate all 3 timelock contracts
-            thirtyDayTimeLockContract = new ethers.Contract(thirty_day_address, abi, provider);
-            sixtyDayTimeLockContract = new ethers.Contract(sixty_day_address, abi, provider);
-            ninetyDayTimeLockContract = new ethers.Contract(ninety_day_address, abi, provider);
-
-            // Instances timestamps
-            thirtyDayTimestamp = await thirtyDayTimeLockContract.timePeriod();
-            console.log("30 day: " + thirtyDayTimestamp);
-            sixtyDayTimestamp = await sixtyDayTimeLockContract.timePeriod();
-            console.log("60 day: " + sixtyDayTimestamp);
-            ninetyDayTimestamp = await ninetyDayTimeLockContract.timePeriod();
-            console.log("90 day: " + ninetyDayTimestamp);
-
-            // 30 day contract balances
-            thirtyDayUsersBalance = await thirtyDayTimeLockContract.balances(resultRegex[0]);
-            thirtyDayUsersBalanceBN = new ethers.BigNumber.from(thirtyDayUsersBalance);
-            thirtyDayAmounts.incrementLocked(thirtyDayUsersBalanceBN);
-            if (currentTime >= thirtyDayTimestamp) {
-                thirtyDayAmounts.incrementAvailable(thirtyDayUsersBalanceBN);
-            }
-            console.log("30 day user balance: " + thirtyDayAmounts.getLocked());
-            thirtyDayAlreadyWithdrawn = await thirtyDayTimeLockContract.alreadyWithdrawn(resultRegex[0]);
-            thirtyDayAlreadyWithdrawnBN = new ethers.BigNumber.from(thirtyDayAlreadyWithdrawn);
-            thirtyDayAmounts.incrementWithdrawn(thirtyDayAlreadyWithdrawnBN);
-            console.log("already withdrawn: " + thirtyDayAmounts.getWithdrawn());
-
-
-            // 60 day contract balances
-            sixtyDayUsersBalance = await sixtyDayTimeLockContract.balances(resultRegex[0]);
-            sixtyDayUsersBalanceBN = new ethers.BigNumber.from(sixtyDayUsersBalance);
-            sixtyDayAmounts.incrementLocked(sixtyDayUsersBalanceBN);
-            if (currentTime >= sixtyDayTimestamp) {
-                sixtyDayAmounts.incrementAvailable(sixtyDayUsersBalanceBN);
-            }
-            console.log("60 day user balance: " + sixtyDayAmounts.getLocked());
-            sixtyDayAlreadyWithdrawn = await sixtyDayTimeLockContract.alreadyWithdrawn(resultRegex[0]);
-            sixtyDayAlreadyWithdrawnBN = new ethers.BigNumber.from(sixtyDayAlreadyWithdrawn);
-            sixtyDayAmounts.incrementWithdrawn(sixtyDayAlreadyWithdrawnBN);
-            console.log("already withdrawn: " + sixtyDayAmounts.getWithdrawn());
-
-            // 90 day contract balances
-            ninetyDayUsersBalance = await ninetyDayTimeLockContract.balances(resultRegex[0]);
-            ninetyDayUsersBalanceBN = new ethers.BigNumber.from(ninetyDayUsersBalance);
-            ninetyDayAmounts.incrementLocked(ninetyDayUsersBalanceBN);
-            if (currentTime >= ninetyDayTimestamp) {
-                ninetyDayAmounts.incrementAvailable(ninetyDayUsersBalanceBN);
-            }
-            console.log("90 day user balance: " + ninetyDayAmounts.getLocked());
-            ninetyDayAlreadyWithdrawn = await ninetyDayTimeLockContract.alreadyWithdrawn(resultRegex[0]);
-            ninetyDayAlreadyWithdrawnBN = new ethers.BigNumber.from(ninetyDayAlreadyWithdrawn);
-            ninetyDayAmounts.incrementWithdrawn(ninetyDayAlreadyWithdrawnBN);
-            console.log("already withdrawn: " + ninetyDayAmounts.getWithdrawn());
+            // Amount already withdrawn
+            simpleAlreadyWithdrawn = await simpleTimeLockContract.alreadyWithdrawn(resultRegex[0]);
+            simpleAlreadyWithdrawnBN = new ethers.BigNumber.from(simpleAlreadyWithdrawn);
+            simpleAmounts.setWithdrawn(simpleAlreadyWithdrawnBN);
+            console.log("Already withdrawn: " + simpleAmounts.getWithdrawn());
 
             // Populate UI with values
             console.log("Adding start:");
-            console.log(thirtyDayAmounts.getLocked());
-            console.log(sixtyDayAmounts.getLocked());
-            console.log(ninetyDayAmounts.getLocked());
+            console.log(simpleAmounts.getLocked());
             console.log("Adding end.");
-            const usersBalance = ethers.utils.formatEther(thirtyDayAmounts.getLocked().add(sixtyDayAmounts.getLocked()).add(ninetyDayAmounts.getLocked()));
-            if (usersBalance < 1 && usersBalance > 0) {
+
+            if (ethers.utils.formatEther(simpleAmounts.getLocked()) < 1 && ethers.utils.formatEther(simpleAmounts.getLocked()) > 0) {
                 document.getElementById("locked").innerHTML = "< 1";
             } else {
-                document.getElementById("locked").innerHTML = usersBalance;
+                document.getElementById("locked").innerHTML = ethers.utils.formatEther(simpleAmounts.getLocked());
             }
-            const alreadyWithdrawn = ethers.utils.formatEther(thirtyDayAmounts.getWithdrawn().add(sixtyDayAmounts.getWithdrawn()).add(ninetyDayAmounts.getWithdrawn()));
-            if (alreadyWithdrawn < 1 && alreadyWithdrawn > 0) {
+
+            if (ethers.utils.formatEther(simpleAmounts.getWithdrawn()) < 1 && ethers.utils.formatEther(simpleAmounts.getWithdrawn()) > 0) {
                 document.getElementById("withdrawn").innerHTML = "< 1";
             } else {
-                document.getElementById("withdrawn").innerHTML = alreadyWithdrawn;
+                document.getElementById("withdrawn").innerHTML = ethers.utils.formatEther(simpleAmounts.getWithdrawn());
+            } 
+
+            // Calculate how many tokens are available, given the current time period and how much time has elapsed so far        
+            if (simpleAmounts.getCurrentTime() >= simpleAmounts.getCliffEdge()) {
+                // The maximum time period has passed, so all locked tokens are available now and forever
+                simpleAmounts.setAvailable(simpleAmounts.getLocked());
+                console.log("No time lock in place, all tokens are available");
+            } else {
+                simpleAmounts.setAvailable(0);
             }
-            const available = ethers.utils.formatEther(thirtyDayAmounts.getAvailable().add(sixtyDayAmounts.getAvailable()).add(ninetyDayAmounts.getAvailable()));
-            if (available < 1 && available > 0) {
+            if (ethers.utils.formatEther(simpleAmounts.getAvailable()) < 1 && ethers.utils.formatEther(simpleAmounts.getAvailable()) > 0) {
                 document.getElementById("available").innerHTML = "< 1";
             } else {
-                document.getElementById("available").innerHTML = available;
+                document.getElementById("available").innerHTML = ethers.utils.formatEther(simpleAmounts.getAvailable());
             }
             // Print value which will be written to state_amount input box
             //console.log("Max available: " + ethers.utils.formatUnits(available).toString());
-            document.getElementById("state_amount").value = ethers.utils.formatUnits(thirtyDayAmounts.getAvailable().add(sixtyDayAmounts.getAvailable()).add(ninetyDayAmounts.getAvailable()), 0);
+            document.getElementById("state_amount").value = ethers.utils.formatUnits(simpleAmounts.getAvailable(), 0);
             document.getElementById("pb").style.transition = "all 0.1s linear 0s";
             document.getElementById("pb").style.width = '100%';
             sleep(1000).then(() => {
@@ -517,141 +535,6 @@ async function calculateBalancesAtStartup() {
                 document.getElementById("button_calculate_balances").value = "Refresh/Calculate Balances";
                 document.getElementById("pb").style.width = '0%';
             });
-        }
-    }
-}
-
-async function calculateBalances() {
-        // Provide message if still in first time period
-    if (
-        currentTime < thirtyDayTimestamp) {
-        console.log("Less than 30 days has passed, no tokens available yet");
-        var unlockCommences = new Date(thirtyDayTimestamp * 1000);
-        var toastResponse = JSON.stringify({
-            avatar: "../images/favicon.ico",
-            text: "Unlocking commences at: " + unlockCommences.toLocaleString(),
-            duration: 10000,
-            newWindow: true,
-            close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            backgroundColor: "linear-gradient(to right, #FF6600, #FFA500)",
-            stopOnFocus: false, // Prevents dismissing of toast on hover
-            onClick: function() {} // Callback after click
-        });
-        var toastObject = JSON.parse(toastResponse);
-        Toastify(toastObject).showToast();
-    } else {
-        thirtyDayAmounts.reset();
-        sixtyDayAmounts.reset();
-        ninetyDayAmounts.reset();
-        window.ethereum.enable();
-        document.getElementById("pb").style.width = '0%';
-        console.log("Disabling button");
-        document.getElementById("button_calculate_balances").disabled = true;
-        document.getElementById("pb").style.transition = "all 30s linear 0s";
-        document.getElementById("pb").style.width = '80%';
-        var toastResponse;
-        // Provider
-        provider = new ethers.providers.Web3Provider(window.ethereum);
-
-        // Current time
-        var currentBlock = await provider.getBlock("latest");
-        currentTime = currentBlock.timestamp;
-        console.log("Current time: " + currentTime);
-
-        // Signer
-        signer = provider.getSigner();
-        console.log(signer);
-
-        // Eth address
-        console.log("Calculating balances");
-        eth_address = document.getElementById('eth_address').value;
-        var pattern = /0x[a-fA-F0-9]{40}/;
-        var resultRegex = pattern.exec(eth_address);
-        if (resultRegex != null) {
-            var recipientAddress = resultRegex[0];
-
-            // Instantiate all 3 timelock contracts
-            thirtyDayTimeLockContract = new ethers.Contract(thirty_day_address, abi, provider);
-            sixtyDayTimeLockContract = new ethers.Contract(sixty_day_address, abi, provider);
-            ninetyDayTimeLockContract = new ethers.Contract(ninety_day_address, abi, provider);
-
-            // Instances timestamps
-            thirtyDayTimestamp = await thirtyDayTimeLockContract.timePeriod();
-            console.log("30 day: " + thirtyDayTimestamp);
-            sixtyDayTimestamp = await sixtyDayTimeLockContract.timePeriod();
-            console.log("60 day: " + sixtyDayTimestamp);
-            ninetyDayTimestamp = await ninetyDayTimeLockContract.timePeriod();
-            console.log("90 day: " + ninetyDayTimestamp);
-
-            // 30 day contract balances
-            thirtyDayUsersBalance = await thirtyDayTimeLockContract.balances(resultRegex[0]);
-            thirtyDayUsersBalanceBN = new ethers.BigNumber.from(thirtyDayUsersBalance);
-            thirtyDayAmounts.incrementLocked(thirtyDayUsersBalanceBN);
-            if (currentTime >= thirtyDayTimestamp) {
-                thirtyDayAmounts.incrementAvailable(thirtyDayUsersBalanceBN);
-            }
-            console.log("30 day user balance: " + thirtyDayAmounts.getLocked());
-            thirtyDayAlreadyWithdrawn = await thirtyDayTimeLockContract.alreadyWithdrawn(resultRegex[0]);
-            thirtyDayAlreadyWithdrawnBN = new ethers.BigNumber.from(thirtyDayAlreadyWithdrawn);
-            thirtyDayAmounts.incrementWithdrawn(thirtyDayAlreadyWithdrawnBN);
-            console.log("already withdrawn: " + thirtyDayAmounts.getWithdrawn());
-
-
-            // 60 day contract balances
-            sixtyDayUsersBalance = await sixtyDayTimeLockContract.balances(resultRegex[0]);
-            sixtyDayUsersBalanceBN = new ethers.BigNumber.from(sixtyDayUsersBalance);
-            sixtyDayAmounts.incrementLocked(sixtyDayUsersBalanceBN);
-            if (currentTime >= sixtyDayTimestamp) {
-                sixtyDayAmounts.incrementAvailable(sixtyDayUsersBalanceBN);
-            }
-            console.log("60 day user balance: " + sixtyDayAmounts.getLocked());
-            sixtyDayAlreadyWithdrawn = await sixtyDayTimeLockContract.alreadyWithdrawn(resultRegex[0]);
-            sixtyDayAlreadyWithdrawnBN = new ethers.BigNumber.from(sixtyDayAlreadyWithdrawn);
-            sixtyDayAmounts.incrementWithdrawn(sixtyDayAlreadyWithdrawnBN);
-            console.log("already withdrawn: " + sixtyDayAmounts.getWithdrawn());
-
-            // 90 day contract balances
-            ninetyDayUsersBalance = await ninetyDayTimeLockContract.balances(resultRegex[0]);
-            ninetyDayUsersBalanceBN = new ethers.BigNumber.from(ninetyDayUsersBalance);
-            ninetyDayAmounts.incrementLocked(ninetyDayUsersBalanceBN);
-            if (currentTime >= ninetyDayTimestamp) {
-                ninetyDayAmounts.incrementAvailable(ninetyDayUsersBalanceBN);
-            }
-            console.log("90 day user balance: " + ninetyDayAmounts.getLocked());
-            ninetyDayAlreadyWithdrawn = await ninetyDayTimeLockContract.alreadyWithdrawn(resultRegex[0]);
-            ninetyDayAlreadyWithdrawnBN = new ethers.BigNumber.from(ninetyDayAlreadyWithdrawn);
-            ninetyDayAmounts.incrementWithdrawn(ninetyDayAlreadyWithdrawnBN);
-            console.log("already withdrawn: " + ninetyDayAmounts.getWithdrawn());
-
-            // Populate UI with values
-            console.log("Adding start:");
-            console.log(thirtyDayAmounts.getLocked());
-            console.log(sixtyDayAmounts.getLocked());
-            console.log(ninetyDayAmounts.getLocked());
-            console.log("Adding end.");
-            const usersBalance = ethers.utils.formatEther(thirtyDayAmounts.getLocked().add(sixtyDayAmounts.getLocked()).add(ninetyDayAmounts.getLocked()));
-            if (usersBalance < 1 && usersBalance > 0) {
-                document.getElementById("locked").innerHTML = "< 1";
-            } else {
-                document.getElementById("locked").innerHTML = usersBalance;
-            }
-            const alreadyWithdrawn = ethers.utils.formatEther(thirtyDayAmounts.getWithdrawn().add(sixtyDayAmounts.getWithdrawn()).add(ninetyDayAmounts.getWithdrawn()));
-            if (alreadyWithdrawn < 1 && alreadyWithdrawn > 0) {
-                document.getElementById("withdrawn").innerHTML = "< 1";
-            } else {
-                document.getElementById("withdrawn").innerHTML = alreadyWithdrawn;
-            }
-            const available = ethers.utils.formatEther(thirtyDayAmounts.getAvailable().add(sixtyDayAmounts.getAvailable()).add(ninetyDayAmounts.getAvailable()));
-            if (available < 1 && available > 0) {
-                document.getElementById("available").innerHTML = "< 1";
-            } else {
-                document.getElementById("available").innerHTML = available;
-            }
-            // Print value which will be written to state_amount input box
-            //console.log("Max available: " + ethers.utils.formatUnits(available).toString());
-            document.getElementById("state_amount").value = ethers.utils.formatUnits(thirtyDayAmounts.getAvailable().add(sixtyDayAmounts.getAvailable()).add(ninetyDayAmounts.getAvailable()), 0);
         } else {
             var toastResponse = JSON.stringify({
                 avatar: "../images/favicon.ico",
@@ -668,20 +551,17 @@ async function calculateBalances() {
             var toastObject = JSON.parse(toastResponse);
             Toastify(toastObject).showToast();
         }
-        document.getElementById("pb").style.transition = "all 0.1s linear 0s";
-        document.getElementById("pb").style.width = '100%';
-        sleep(1000).then(() => {
-            document.getElementById("pb").classList.remove("progress-bar-animated");
-            document.getElementById("button_calculate_balances").disabled = false;
-            document.getElementById("pb").style.width = '0%';
-        });
     }
 }
 
+async function calculateBalances() {
+    simpleAmounts.reset();
+    await updateBalances();
+}
+
 async function onButtonClickTransfer() {
-    thirtyDayAmounts.reset();
-    sixtyDayAmounts.reset();
-    ninetyDayAmounts.reset();
+    simpleAmounts.reset();
+    await updateBalances();
     // Provider
     window.ethereum.enable()
     provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -691,14 +571,7 @@ async function onButtonClickTransfer() {
     console.log(signer);
 
     // Instantiate all 3 timelock contracts
-    thirtyDayTimeLockContract = new ethers.Contract(thirty_day_address, abi, signer);
-    sixtyDayTimeLockContract = new ethers.Contract(sixty_day_address, abi, signer);
-    ninetyDayTimeLockContract = new ethers.Contract(ninety_day_address, abi, signer);
-
-    // Current time
-    var currentBlock = await provider.getBlock("latest");
-    currentTime = currentBlock.timestamp;
-    console.log("Current time: " + currentTime);
+    simpleTimeLockContract = new ethers.Contract(simple_address, abi, signer);
 
     // UI mods
     document.getElementById("pb").style.width = '0%';
@@ -749,185 +622,27 @@ async function onButtonClickTransfer() {
         });
         throw "exit";
     }
-    if (stateAmountInWei > 0) {
-        console.log("Calculating balances");
+    if (stateAmountInWei > 0 && stateAmountInWei <= simpleAmounts.getAvailable()) {
         eth_address = document.getElementById('eth_address').value;
         var pattern = /0x[a-fA-F0-9]{40}/;
         var resultRegex = pattern.exec(eth_address);
         if (resultRegex != null) {
             var recipientAddress = resultRegex[0];
-
-            // Instances timestamps
-            thirtyDayTimestamp = await thirtyDayTimeLockContract.timePeriod();
-            console.log("30 day: " + thirtyDayTimestamp);
-            sixtyDayTimestamp = await sixtyDayTimeLockContract.timePeriod();
-            console.log("60 day: " + sixtyDayTimestamp);
-            ninetyDayTimestamp = await ninetyDayTimeLockContract.timePeriod();
-            console.log("90 day: " + ninetyDayTimestamp);
-
-            // 30 day contract balances
-            thirtyDayUsersBalance = await thirtyDayTimeLockContract.balances(resultRegex[0]);
-            thirtyDayUsersBalanceBN = new ethers.BigNumber.from(thirtyDayUsersBalance);
-            thirtyDayAmounts.incrementLocked(thirtyDayUsersBalanceBN);
-            if (currentTime >= thirtyDayTimestamp) {
-                thirtyDayAmounts.incrementAvailable(thirtyDayUsersBalanceBN);
-            }
-            console.log("30 day user balance: " + thirtyDayAmounts.getLocked());
-            thirtyDayAlreadyWithdrawn = await thirtyDayTimeLockContract.alreadyWithdrawn(resultRegex[0]);
-            thirtyDayAlreadyWithdrawnBN = new ethers.BigNumber.from(thirtyDayAlreadyWithdrawn);
-            thirtyDayAmounts.incrementWithdrawn(thirtyDayAlreadyWithdrawnBN);
-            console.log("already withdrawn: " + thirtyDayAmounts.getWithdrawn());
-
-
-            // 60 day contract balances
-            sixtyDayUsersBalance = await sixtyDayTimeLockContract.balances(resultRegex[0]);
-            sixtyDayUsersBalanceBN = new ethers.BigNumber.from(sixtyDayUsersBalance);
-            sixtyDayAmounts.incrementLocked(sixtyDayUsersBalanceBN);
-            if (currentTime >= sixtyDayTimestamp) {
-                sixtyDayAmounts.incrementAvailable(sixtyDayUsersBalanceBN);
-            }
-            console.log("60 day user balance: " + sixtyDayAmounts.getLocked());
-            sixtyDayAlreadyWithdrawn = await sixtyDayTimeLockContract.alreadyWithdrawn(resultRegex[0]);
-            sixtyDayAlreadyWithdrawnBN = new ethers.BigNumber.from(sixtyDayAlreadyWithdrawn);
-            sixtyDayAmounts.incrementWithdrawn(sixtyDayAlreadyWithdrawnBN);
-            console.log("already withdrawn: " + sixtyDayAmounts.getWithdrawn());
-
-            // 90 day contract balances
-            ninetyDayUsersBalance = await ninetyDayTimeLockContract.balances(resultRegex[0]);
-            ninetyDayUsersBalanceBN = new ethers.BigNumber.from(ninetyDayUsersBalance);
-            ninetyDayAmounts.incrementLocked(ninetyDayUsersBalanceBN);
-            if (currentTime >= ninetyDayTimestamp) {
-                ninetyDayAmounts.incrementAvailable(ninetyDayUsersBalanceBN);
-            }
-            console.log("90 day user balance: " + ninetyDayAmounts.getLocked());
-            ninetyDayAlreadyWithdrawn = await ninetyDayTimeLockContract.alreadyWithdrawn(resultRegex[0]);
-            ninetyDayAlreadyWithdrawnBN = new ethers.BigNumber.from(ninetyDayAlreadyWithdrawn);
-            ninetyDayAmounts.incrementWithdrawn(ninetyDayAlreadyWithdrawnBN);
-            console.log("already withdrawn: " + ninetyDayAmounts.getWithdrawn());
-            var valid = false;
-            if (currentTime >= thirtyDayTimestamp && thirtyDayAmounts.getAvailable() > 0 && stateAmountInWei <= thirtyDayAmounts.getAvailable()) {
-                valid = true;
-                response = await thirtyDayTimeLockContract.transferTimeLockedTokensAfterTimePeriod(erc20_contract_address, recipientAddress, stateAmountInWei);
-                var toastResponse = JSON.stringify({
-                    avatar: "../images/favicon.ico",
-                    text: "Congratulations, tokens unlocked!",
-                    duration: 10000,
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "right", // `left`, `center` or `right`
-                    backgroundColor: "linear-gradient(to right, #454A21, #607D3B)",
-                    stopOnFocus: false, // Prevents dismissing of toast on hover
-                    onClick: function() {} // Callback after click
-                });
-                var toastObject = JSON.parse(toastResponse);
-                Toastify(toastObject).showToast();
-            } else if (currentTime >= thirtyDayTimestamp && thirtyDayAmounts.getAvailable() > 0 && stateAmountInWei > thirtyDayAmounts.getAvailable()) {
-                valid = true;
-                response = await thirtyDayTimeLockContract.transferTimeLockedTokensAfterTimePeriod(erc20_contract_address, recipientAddress, thirtyDayAmounts.getAvailable());
-                var toastResponse = JSON.stringify({
-                    avatar: "../images/favicon.ico",
-                    text: "Congratulations, tokens unlocked!",
-                    duration: 10000,
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "right", // `left`, `center` or `right`
-                    backgroundColor: "linear-gradient(to right, #454A21, #607D3B)",
-                    stopOnFocus: false, // Prevents dismissing of toast on hover
-                    onClick: function() {} // Callback after click
-                });
-                var toastObject = JSON.parse(toastResponse);
-                Toastify(toastObject).showToast();
-            }
-
-            if (currentTime >= sixtyDayTimestamp && sixtyDayAmounts.getAvailable() > 0 && stateAmountInWei <= sixtyDayAmounts.getAvailable()) {
-                valid = true;
-                response = await sixtyDayTimeLockContract.transferTimeLockedTokensAfterTimePeriod(erc20_contract_address, recipientAddress, stateAmountInWei);
-                var toastResponse = JSON.stringify({
-                    avatar: "../images/favicon.ico",
-                    text: "Congratulations, tokens unlocked!",
-                    duration: 10000,
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "right", // `left`, `center` or `right`
-                    backgroundColor: "linear-gradient(to right, #454A21, #607D3B)",
-                    stopOnFocus: false, // Prevents dismissing of toast on hover
-                    onClick: function() {} // Callback after click
-                });
-                var toastObject = JSON.parse(toastResponse);
-                Toastify(toastObject).showToast();
-            } else if (currentTime >= sixtyDayTimestamp && sixtyDayAmounts.getAvailable() > 0 && stateAmountInWei > sixtyDayAmounts.getAvailable()) {
-                valid = true;
-                response = await sixtyDayTimeLockContract.transferTimeLockedTokensAfterTimePeriod(erc20_contract_address, recipientAddress, sixtyDayAmounts.getAvailable());
-                var toastResponse = JSON.stringify({
-                    avatar: "../images/favicon.ico",
-                    text: "Congratulations, tokens unlocked!",
-                    duration: 10000,
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "right", // `left`, `center` or `right`
-                    backgroundColor: "linear-gradient(to right, #454A21, #607D3B)",
-                    stopOnFocus: false, // Prevents dismissing of toast on hover
-                    onClick: function() {} // Callback after click
-                });
-                var toastObject = JSON.parse(toastResponse);
-                Toastify(toastObject).showToast();
-            }
-
-            if (currentTime >= ninetyDayTimestamp && ninetyDayAmounts.getAvailable() > 0 && stateAmountInWei <= ninetyDayAmounts.getAvailable()) {
-                valid = true;
-                response = await ninetyDayTimeLockContract.transferTimeLockedTokensAfterTimePeriod(erc20_contract_address, recipientAddress, stateAmountInWei);
-                var toastResponse = JSON.stringify({
-                    avatar: "../images/favicon.ico",
-                    text: "Congratulations, tokens unlocked!",
-                    duration: 10000,
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "right", // `left`, `center` or `right`
-                    backgroundColor: "linear-gradient(to right, #454A21, #607D3B)",
-                    stopOnFocus: false, // Prevents dismissing of toast on hover
-                    onClick: function() {} // Callback after click
-                });
-                var toastObject = JSON.parse(toastResponse);
-                Toastify(toastObject).showToast();
-            } else if (currentTime >= ninetyDayTimestamp && ninetyDayAmounts.getAvailable() > 0 && stateAmountInWei > ninetyDayAmounts.getAvailable()) {
-                valid = true;
-                response = await ninetyDayTimeLockContract.transferTimeLockedTokensAfterTimePeriod(erc20_contract_address, recipientAddress, ninetyDayAmounts.getAvailable());
-                var toastResponse = JSON.stringify({
-                    avatar: "../images/favicon.ico",
-                    text: "Congratulations, tokens unlocked!",
-                    duration: 10000,
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "right", // `left`, `center` or `right`
-                    backgroundColor: "linear-gradient(to right, #454A21, #607D3B)",
-                    stopOnFocus: false, // Prevents dismissing of toast on hover
-                    onClick: function() {} // Callback after click
-                });
-                var toastObject = JSON.parse(toastResponse);
-                Toastify(toastObject).showToast();
-            }
-            if (valid == false){
-                var toastResponse = JSON.stringify({
-                    avatar: "../images/sorry.png",
-                    text: "Sorry, invalid request, please check input!",
-                    duration: 10000,
-                    newWindow: true,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "right", // `left`, `center` or `right`
-                    backgroundColor: "linear-gradient(to right, #FF6600, #FFA500)",
-                    stopOnFocus: false, // Prevents dismissing of toast on hover
-                    onClick: function() {} // Callback after click
-                });
-                var toastObject = JSON.parse(toastResponse);
-                Toastify(toastObject).showToast();
-            }
+            response = await simpleTimeLockContract.transferTimeLockedTokensAfterTimePeriod(erc20_contract_address, recipientAddress, stateAmountInWei);
+            var toastResponse = JSON.stringify({
+                avatar: "../images/favicon.ico",
+                text: "Congratulations, tokens unlocked!",
+                duration: 10000,
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                backgroundColor: "linear-gradient(to right, #454A21, #607D3B)",
+                stopOnFocus: false, // Prevents dismissing of toast on hover
+                onClick: function() {} // Callback after click
+            });
+            var toastObject = JSON.parse(toastResponse);
+            Toastify(toastObject).showToast();
         } else {
             var toastResponse = JSON.stringify({
                 avatar: "../images/favicon.ico",
@@ -947,7 +662,7 @@ async function onButtonClickTransfer() {
     } else {
         var toastResponse = JSON.stringify({
             avatar: "../images/favicon.ico",
-            text: "Token amount must be greater than zero!",
+            text: "Please re-check token amount and try again!",
             duration: 10000,
             newWindow: true,
             close: true,
