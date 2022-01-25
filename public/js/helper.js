@@ -509,7 +509,7 @@ async function updateBalances() {
                 document.getElementById("withdrawn").innerHTML = "< 1";
             } else {
                 document.getElementById("withdrawn").innerHTML = ethers.utils.formatEther(simpleAmounts.getWithdrawn());
-            }
+            } 
 
             // Calculate how many tokens are available, given the current time period and how much time has elapsed so far        
             if (simpleAmounts.getCurrentTime() >= simpleAmounts.getCliffEdge()) {
