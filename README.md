@@ -4,27 +4,30 @@ This interface can be repurposed i.e. if multiple SimpleTimelock.sol contracts a
 
 ```
 # First, check out this repo
-git clone --bare https://github.com/second-state/timelock-token-user-interface.git
+git clone --bare https://github.com/second-state/simple-timelock-user-interface.git
 
 # Change into its dir
-cd timelock-token-user-interface
+cd simple-timelock-user-interface
 
 ```
 
-Create a new repo using GitHub web interface (let's say call it `linear-timelock-user-interface`)
-You will now have access to a GitHub endpoint (which you own) like `git@github.com:second-state/linear-timelock-user-interface.git`
+Create a new repo using GitHub web interface (let's say call it `new-timelock-user-interface`)
+You will now have access to a GitHub endpoint (which you own) like `git@github.com:second-state/new-timelock-user-interface.git`
 
 ```
-# Now push the original timelock-token-user-interface to your new linear-timelock-user-interface
+# Now push the original timelock-token-user-interface to your new new-timelock-user-interface
 
-git push --mirror git@github.com:second-state/linear-timelock-user-interface.git
+git push --mirror git@github.com:second-state/new-timelock-user-interface.git
 ```
 
 Now remove the original repository and let's focus on your new repository. We are going to flatten all commits (remove the history so you have a clean history of commits only for the work you are doing moving forward).
 
 ```
 # Clone your new repository
-git@github.com:second-state/linear-timelock-user-interface.git
+git@github.com:second-state/new-timelock-user-interface.git
+
+# Change to the repo
+cd new-timelock-user-interface
 
 # Check out to a temporary branch:
 git checkout --orphan TEMP_BRANCH
@@ -59,23 +62,27 @@ Users simply enter their Ethereum mainnet address and click the transfer button.
 
 # Where is the timelock smart contract
 
-The [timelock smart contract](https://github.com/ParaState/timelock-token-deployment/blob/main/Timelock.sol) is deployed on the Ethereum mainnet and then this UI source code us updated with the timelocks ABI, bytecode, contract address and deployment transaction hash. This timelock UI instantiates the timelock contract in order to interact and transfer tokens to end users and so forth.
+The [simple timelock smart contract](https://github.com/second-state/simple-timelock-smart-contract) is deployed on the Ethereum mainnet and then this UI source code us updated with the timelocks ABI, bytecode, contract address and deployment transaction hash. This timelock UI instantiates the timelock contract in order to interact and transfer tokens to end users and so forth.
 
 # How to deploy this UI
 
 Clone this repository
 
 ```
-git clone git@github.com:second-state/timelock-token-user-interface.git
+git clone git@github.com:second-state/simple-timelock-user-interface.git
 ```
 
 ## ABI and address of Timelock
 
-Paste the ABI and the address of the timelock into the helper.js file
+Paste the ABI and the address of the timelock smart contract into the helper.js file
 
 ## Contract address of ERC20 (NOT timelock)
 
 In addition to that, also paste the contract address of the **ERC20 contract** into the helper.js file. You will see the two addresses are clearly marked.
+
+## Configuring
+
+Open the package.json file and update any paths/URLs etc. to suite this new implementation
 
 ## Installing
 
@@ -93,4 +100,4 @@ To publish/deploy simply type
 npm run deploy
 ```
 
-The site will then be hosted to [https://second-state.github.io/timelock-token-user-interface/html/](https://second-state.github.io/timelock-token-user-interface/html/)
+The site will then be hosted to [https://second-state.github.io/simple-timelock-user-interface/html/](https://second-state.github.io/simple-timelock-user-interface/html/)
