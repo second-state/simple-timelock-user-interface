@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/second-state/simple-timelock-user-interface.git"
   },
-  "keywords": ['ethereum', 'parastate', 'timelock', 'token'],
+  "keywords": ["ethereum", "parastate", "timelock", "token"],
   "author": "",
   "license": "MIT",
   "bugs": {
