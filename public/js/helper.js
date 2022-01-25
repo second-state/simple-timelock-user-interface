@@ -378,7 +378,7 @@ class Amounts {
 
     setCurrentTime(_currentTime) {
         this.currentTime = _currentTime;
-    }
+    } 
 
     reset() {
         this.locked = new ethers.BigNumber.from('0');
