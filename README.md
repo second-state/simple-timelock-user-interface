@@ -15,7 +15,7 @@ Create a new repo using GitHub web interface (let's say call it `new-timelock-us
 You will now have access to a GitHub endpoint (which you own) like `git@github.com:second-state/new-timelock-user-interface.git`
 
 ```
-# Now push the original timelock-token-user-interface to your new new-timelock-user-interface
+# Now push the original simple-timelock-user-interface to your new new-timelock-user-interface
 
 git push --mirror git@github.com:second-state/new-timelock-user-interface.git
 ```
